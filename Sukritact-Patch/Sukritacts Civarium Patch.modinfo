@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="72c5e09e-2d4d-4f3c-9c93-50702b7ddf59" version="1">
+  <Properties>
+    <Name>Unofficial Sukritact's Civarium Bug and Balance Patch</Name>
+    <Description>Fixes and rebalances civilizations and leaders from Sukritact's Civarium Collection. This mod has no requirements and will apply to any affected mods you have installed.</Description>
+    <CompatibleVersions xmlns="http://schemas.microsoft.com/developer/msbuild/2003">2.0</CompatibleVersions>
+	<Created>1654399857</Created>
+    <Teaser>Fixes and rebalances civilizations and leaders from Sukritact's Civarium Collection.</Teaser>
+    <Authors>vroom918</Authors>
+  </Properties>
+  <Dependencies>
+  </Dependencies>
+  <FrontEndActions>
+    <UpdateDatabase id="Suk_Patch_DB_FE">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+      </Properties>
+      <File>Bugs/Config.sql</File>
+	  <File>Balance/Config.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Suk_Patch_Text_FE">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+      </Properties>
+      <File>Bugs/Text.sql</File>
+      <File>Balance/Text.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Suk_Patch_Icons_FE">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+      </Properties>
+      <File>Bugs/Icons.sql</File>
+    </UpdateIcons>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="Suk_Patch_DB_IG">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+      </Properties>
+      <File>Bugs/Main.sql</File>
+      <File>Balance/Main.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Suk_Patch_Text_IG">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+      </Properties>
+	  <File>Bugs/Text.sql</File>
+	  <File>Balance/Text.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Suk_Patch_Icons_IG">
+      <Properties>
+        <LoadOrder>999</LoadOrder>
+      </Properties>
+      <File>Bugs/Icons.sql</File>
+    </UpdateIcons>
+  </InGameActions>
+  <Files>
+    <File>Bugs/Main.sql</File>
+	<File>Bugs/Config.sql</File>
+    <File>Bugs/Text.sql</File>
+    <File>Bugs/Icons.sql</File>
+    <File>Balance/Main.sql</File>
+	<File>Balance/Config.sql</File>
+    <File>Balance/Text.sql</File>
+  </Files>
+</Mod>
